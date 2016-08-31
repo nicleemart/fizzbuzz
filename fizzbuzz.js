@@ -1,15 +1,16 @@
 window.addEventListener("load", function () {
 	for (var i = 1; i <= 100; i++) {
-		var isDivisibleByThree = i % 3 === 0;
-		var isDivisibleByFive = i % 5 === 0;
+		var three = i % 3 === 0;
+		var five = i % 5 === 0;
+		var fifteen = i % 15 === 0;
 
-		if (isDivisibleByThree && isDivisibleByFive) {
+		if (fifteen) {
 			console.log("FizzBuzz");
 		}
-		else if (isDivisibleByThree) {
+		else if (three) {
 			console.log("Fizz");
 		}
-		else if (isDivisibleByFive) {
+		else if (five) {
 			console.log("Buzz");
 		}
 		else {
